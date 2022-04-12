@@ -1,0 +1,20 @@
+img {
+    height: 90px;
+}
+
+body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#add_new_button {
+}
+
+
+#product_list_button {
+    padding-top: 10px;
+}
+
+#submit_button {
+    padding-top: 10px;
+}

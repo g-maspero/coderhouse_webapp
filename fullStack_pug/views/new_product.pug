@@ -1,0 +1,24 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='./css/main.css')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous')
+  title My awesome app
+h2 Add new product
+form#productForm
+  .form-group
+    label(for='product_title') Title
+    input#product_title.form-control(type='text' name='title' placeholder='Harry Potter')
+  .form-group
+    label(for='product_price') Price
+    input#product_price.form-control(type='text' name='price' placeholder='25')
+  .form-group
+    label(for='product_thumbnail') Thumbnail
+    input#product_thumbnail.form-control(type='text' name='thumbnail' placeholder='harryPotterImgURL')
+  #submit_button
+    button.btn.btn-secondary(type='button' onclick='onSubmit()') Submit
+#product_list_button
+  button.btn.btn-dark(type='button' onclick='onProductListClick()') Product List
+script(src='./scripts/main.js')

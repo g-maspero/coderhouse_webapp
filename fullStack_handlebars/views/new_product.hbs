@@ -1,0 +1,21 @@
+<h2>Add new product</h2>
+<form id="productForm">
+    <div class="form-group">
+        <label for="product_title">Title</label>
+        <input type="text" class="form-control" id="product_title" name="title" placeholder="Harry Potter">
+    </div>
+    <div class="form-group">
+        <label for="product_price">Price</label>
+        <input type="text" class="form-control" id="product_price" name="price" placeholder="25">
+    </div>
+    <div class="form-group">
+        <label for="product_thumbnail">Thumbnail</label>
+        <input type="text" class="form-control" id="product_thumbnail" name="thumbnail" placeholder"harryPotterImgURL">
+    </div>
+    <div id="submit_button">
+        <button type="button" class="btn btn-secondary" onclick="onSubmit()">Submit</button>
+    </div>
+</form>
+<div id="product_list_button">
+    <button type="button" class="btn btn-dark" onclick="onProductListClick()">Product List</button>
+</div>
